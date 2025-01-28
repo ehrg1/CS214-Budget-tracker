@@ -141,6 +141,10 @@ void MBT::IncreaseBudget(){
     int AddIncome;
     cout<<"add to your budget: $";
     cin>>AddIncome;
+    if(AddIncome < 0){
+        cout<<"invalid input!"<<endl;
+        return;
+    }
     income += AddIncome;
     
 }
